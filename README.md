@@ -5,7 +5,7 @@ This project takes image or text(look at .puz files for reference) file of an Un
 ## The idea 
 My plan was to find solutions to the puzzle using a standard graph traversal algorithm like A* . The program would keep track of several potential solutions to a puzzle at once, and explore the ones that look the most promising. Using A* as opposed to something like depth-first search would guarantee that the solution found in the end was optimal without being much more complicated to implement, so it seemed like an obvious search.
 
-##Approach
+## Approach
 * Using hardcorded locations relies on knowing the exact pixel locations of tile centers and borders in the image. It works only for images from a specific source, so not feasible always.
 * Implementing Region detection and sampling would be more flexible and efficient. This method first identifies the game area within the image.
 * It then crops and resizes the image to a standard size (600x600).
